@@ -1,0 +1,125 @@
+@import "bootstrap.css";
+
+.slider {
+    width: 100%;
+    /* max-width: 800px; */
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.slider-btn:active {
+    transform: scale(1.1);
+}
+
+.slider-btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.slider-btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+.title-section::after {
+    content: "";
+    display: block;
+    height: 0.1rem;
+    background-color: #f2f2f2;
+    width: 50%;
+    margin: 2rem 0;
+}
+
+.nav {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+
+}
+
+.hamburger {
+    cursor: pointer;
+    background: transparent;
+    /* transition: all 3s; */
+
+}
+
+.nav__link {
+    position: static;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    /* transition: all 3s; */
+}
+
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav__link a:hover {
+    color: #0a58ca;
+}
+
+.hide {
+    display: none;
+    transition: all 3s;
+}
+
+@media screen and (min-width: 600px) {
+    .nav__link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    transition: all .3s;
+
+    }
+
+    .nav__link a {
+        display: inline-block;
+        padding: 1.5rem 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
